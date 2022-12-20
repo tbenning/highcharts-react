@@ -12,6 +12,8 @@ Testing out Primer and React Highcharts. Built using [Primer React Template](htt
 ## Helpful Bits so far
 
 ** Line Style Variables **
+
+```
 'Solid',
 'ShortDash',
 'ShortDot',
@@ -23,6 +25,7 @@ Testing out Primer and React Highcharts. Built using [Primer React Template](htt
 'DashDot',
 'LongDashDot',
 'LongDashDotDot'
+```
 
 ## Useful Links
 
