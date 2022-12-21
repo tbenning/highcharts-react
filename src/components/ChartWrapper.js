@@ -10,6 +10,7 @@ export default function ChartWrapper({
     return (
         <Box
             p={4}
+            pb={5}
             backgroundColor="canvas.default"
             border="1px solid"
             borderColor="border.default"

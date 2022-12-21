@@ -9,6 +9,7 @@ import StackedArea from './components/StackedArea'
 import { Box } from '@primer/react'
 import Highcharts from 'highcharts'
 import ChartWrapper from './components/ChartWrapper'
+import ShopifyCharts from './components/ShopifyCharts'
 require('highcharts/modules/accessibility')(Highcharts)
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
                             <HorizontalBarChart />
                         </ChartWrapper>
                         <VerticalBarChart />
+                        <ShopifyCharts />
                     </Box>
                 </Box>
                 <NewPlayground />

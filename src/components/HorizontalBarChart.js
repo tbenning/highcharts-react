@@ -27,6 +27,11 @@ const options = {
     legend: {
         enabled: false,
     },
+    plotOptions: {
+        column: {
+            borderRadius: 4,
+        },
+    },
     series: [
         {
             data: [1, 2, 1, 4],

@@ -32,6 +32,15 @@ const options = {
             data: [1, 2, 1, 4],
         },
     ],
+    plotOptions: {
+        column: {
+            borderRadius: 4,
+            // borderRadiusTopLeft: '50%',
+            // borderRadiusTopRight: '50%',
+            // Border radius plugin
+            // https://github.com/highcharts/rounded-corners
+        },
+    },
 }
 
 const VerticalBarChart = () => (
