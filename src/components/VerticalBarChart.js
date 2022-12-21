@@ -2,7 +2,9 @@ import React from 'react'
 import { render } from 'react-dom'
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
-import chartTheme from './chartTheme'
+import getChartTheme from './chartTheme'
+
+const chartTheme = getChartTheme()
 
 const options = {
     ...chartTheme,
@@ -11,6 +13,7 @@ const options = {
     },
     title: {
         text: 'My chart',
+        enabled: false,
     },
     xAxis: {
         title: { text: 'Dates' },
@@ -21,7 +24,9 @@ const options = {
             text: 'Issues',
         },
     },
-
+    legend: {
+        enabled: false,
+    },
     series: [
         {
             data: [1, 2, 1, 4],

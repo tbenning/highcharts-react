@@ -8,6 +8,7 @@ import LineChart from './components/LineChart'
 import StackedArea from './components/StackedArea'
 import { Box } from '@primer/react'
 import Highcharts from 'highcharts'
+import ChartWrapper from './components/ChartWrapper'
 require('highcharts/modules/accessibility')(Highcharts)
 
 function App() {
@@ -25,9 +26,24 @@ function App() {
                         flexDirection="column"
                         gridGap={5}
                     >
-                        <StackedArea />
-                        <LineChart />
-                        <HorizontalBarChart />
+                        <ChartWrapper
+                            title="Types of issues occurring"
+                            description="Number of issues by year"
+                        >
+                            <LineChart />
+                        </ChartWrapper>
+                        <ChartWrapper
+                            title="Greenhouse gases from Norwegian economic activity"
+                            description="Million tonnes CO2 equivalents by year"
+                        >
+                            <StackedArea />
+                        </ChartWrapper>
+                        <ChartWrapper
+                            title="Types of issues occurring"
+                            description="Number of issues over time"
+                        >
+                            <HorizontalBarChart />
+                        </ChartWrapper>
                         <VerticalBarChart />
                     </Box>
                 </Box>

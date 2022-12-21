@@ -2,13 +2,17 @@ import React from 'react'
 import { render } from 'react-dom'
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
-import chartTheme from './chartTheme'
+import getChartTheme from './chartTheme'
+import primitives from '@primer/primitives'
+
+const chartTheme = getChartTheme()
+const colors = primitives.colors.light
 
 const options = {
     ...chartTheme,
     chart: {
         type: 'spline',
-        spacing: 50,
+        spacing: 0,
     },
     labels: {
         align: 'left',
@@ -28,7 +32,7 @@ const options = {
         opposite: true,
     },
     title: {
-        text: 'My chart',
+        text: undefined,
         align: 'left',
         style: { fontWeight: 'bold' },
         useHTML: true,
@@ -37,21 +41,28 @@ const options = {
         series: {
             pointStart: 2012,
         },
+        spling: {
+            marker: {
+                enabled: false,
+            },
+        },
     },
-    subtitle: { text: 'Number of issues in my chart', align: 'left' },
     series: [
         {
             data: [1, 2, 1, 4, 3, 6, 5, 3, 2, 12],
             lineWidth: 1.5,
             dashStyle: 'longdashdot',
+            color: colors.scale.blue[5],
         },
         {
             data: [2, 3, 6, 3, 2, 1, 3, 3, 8, 7],
             lineWidth: 1.5,
+            color: colors.scale.orange[4],
         },
         {
             data: [3, 6, 3, 2, 1, 3, 3, 8, 7, 4],
             lineWidth: 1.5,
+            color: colors.scale.green[4],
         },
     ],
 }
