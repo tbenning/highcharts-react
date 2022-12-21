@@ -1,6 +1,6 @@
 # Highcharts React Prototype
 
-Testing out Primer and React Highcharts. Built using [Primer React Template](https://github.com/primer/react-template).
+Testing out Primer and React Highcharts. Built using [Primer React Template](https://github.com/primer/react-template). It also uses the [Highcharts React Wrapper](https://github.com/highcharts/highcharts-react).
 
 ## Get Started (Locally)
 
