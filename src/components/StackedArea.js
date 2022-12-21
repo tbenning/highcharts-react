@@ -33,6 +33,10 @@ function StackedArea() {
         legend: {
             align: 'left',
             verticalAlign: 'top',
+            itemStyle: {
+                fontWeight: 'regular',
+                font: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+            },
         },
         plotOptions: {
             series: {

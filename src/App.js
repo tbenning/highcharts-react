@@ -45,11 +45,15 @@ function App() {
                         >
                             <HorizontalBarChart />
                         </ChartWrapper>
-                        <VerticalBarChart />
+                        <ChartWrapper
+                            title="Types of issues occurring"
+                            description="Number of issues over time"
+                        >
+                            <VerticalBarChart />
+                        </ChartWrapper>
                         <ShopifyCharts />
                     </Box>
                 </Box>
-                <NewPlayground />
             </BaseStyles>
         </ThemeProvider>
     )

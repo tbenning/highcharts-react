@@ -8,10 +8,10 @@ const getChartTheme = (theme = 'light') => {
             colors.scale.blue[5],
             colors.scale.orange[4],
             colors.scale.green[4],
-            colors.scale.gray[4],
-            colors.scale.pink[5],
+            colors.scale.pink[4],
+            colors.scale.gray[5],
             colors.scale.red[4],
-            colors.scale.purple[5],
+            colors.scale.purple[4],
         ],
         tooltip: {
             backgroundColor: colors.canvas.default,

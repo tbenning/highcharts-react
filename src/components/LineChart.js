@@ -21,8 +21,9 @@ const options = {
         align: 'left',
         verticalAlign: 'top',
         x: -8,
-        title: {
-            style: { fontWeight: 'normal' },
+        itemStyle: {
+            fontWeight: 'regular',
+            font: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
         },
     },
     yAxis: {
@@ -41,7 +42,7 @@ const options = {
         series: {
             pointStart: 2012,
         },
-        spling: {
+        spline: {
             marker: {
                 enabled: false,
             },
@@ -51,18 +52,23 @@ const options = {
         {
             data: [1, 2, 1, 4, 3, 6, 5, 3, 2, 12],
             lineWidth: 1.5,
-            dashStyle: 'longdashdot',
-            color: colors.scale.blue[5],
+            // color: colors.scale.blue[5],
         },
         {
             data: [2, 3, 6, 3, 2, 1, 3, 3, 8, 7],
             lineWidth: 1.5,
-            color: colors.scale.orange[4],
+            // color: colors.scale.orange[4],
         },
         {
             data: [3, 6, 3, 2, 1, 3, 3, 8, 7, 4],
-            lineWidth: 1.5,
-            color: colors.scale.green[4],
+            lineWidth: 2,
+            // color: colors.scale.green[4],
+            dashStyle: 'ShortDashDot',
+        },
+        {
+            data: [6, 3, 2, 1, 3, 3, 8, 7, 4, 3],
+            lineWidth: 2,
+            // color: colors.scale.pink[5],
         },
     ],
 }

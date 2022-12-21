@@ -12,8 +12,7 @@ const options = {
         type: 'column',
     },
     title: {
-        text: 'My chart',
-        enabled: false,
+        text: undefined,
     },
     xAxis: {
         title: { text: 'Dates' },
