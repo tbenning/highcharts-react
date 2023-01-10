@@ -6,19 +6,36 @@
         "@babel/core": "^7.0.0-0",
         "@babel/plugin-syntax-flow": "^7.14.5",
         "@babel/plugin-transform-react-jsx": "^7.14.9",
+        "@carbon/charts": "^1.6.3",
+        "@carbon/charts-react": "^1.6.3",
         "@primer/octicons-react": "^17.3.0",
         "@primer/primitives": "^7.10.0",
         "@primer/react": "^35.4.0",
         "@shopify/polaris-viz": "^7.11.1",
+        "@visa/bar-chart": "^5.1.2",
+        "@visa/charts-react": "^3.1.2",
+        "@visx/curve": "^3.0.0",
+        "@visx/glyph": "^3.0.0",
+        "@visx/gradient": "^3.0.0",
+        "@visx/mock-data": "^3.0.0",
+        "@visx/pattern": "^3.0.0",
+        "@visx/react-spring": "^3.0.0",
+        "@visx/responsive": "^3.0.0",
+        "@visx/xychart": "^3.0.0",
         "chart.js": "^3.9.1",
+        "d3": "^7.8.0",
+        "d3-selection": "^3.0.0",
         "eslint": "^8.0.0",
         "highcharts": "^10.3.2",
         "highcharts-react-official": "^3.1.0",
+        "init": "^0.1.2",
         "react": "^17.0.0",
         "react-chartjs-2": "^4.3.1",
         "react-dom": "^17.0.0",
         "react-is": "^16.8.0",
+        "react-router-dom": "^6.6.2",
         "react-scripts": "^5.0.1",
+        "react-spring": "^9.6.1",
         "styled-components": "^5.3.5",
         "typescript": "^2.7",
         "web-vitals": "^1.0.1"
@@ -26,12 +43,24 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "storybook": "start-storybook -p 6006 -s public",
+        "build-storybook": "build-storybook -s public"
     },
     "eslintConfig": {
         "extends": [
             "react-app",
             "react-app/jest"
+        ],
+        "overrides": [
+            {
+                "files": [
+                    "**/*.stories.*"
+                ],
+                "rules": {
+                    "import/no-anonymous-default-export": "off"
+                }
+            }
         ]
     },
     "browserslist": {
@@ -47,6 +76,9 @@
         ]
     },
     "devDependencies": {
-        "eslint-config-react-app": "^7.0.1"
+        "babel-plugin-named-exports-order": "^0.0.2",
+        "eslint-config-react-app": "^7.0.1",
+        "prop-types": "^15.8.1",
+        "webpack": "^5.75.0"
     }
 }

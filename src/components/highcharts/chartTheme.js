@@ -28,6 +28,12 @@ const getChartTheme = (theme = 'light') => {
         },
         chart: {
             spacing: 0,
+            backgroundColor: colors.canvas.default,
+            style: {
+                fontFamily:
+                    '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", sans-serif',
+                fontSize: '12px',
+            },
         },
     }
 }

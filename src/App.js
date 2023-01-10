@@ -1,15 +1,16 @@
+import { Routes, Route, Outlet, Link } from 'react-router-dom'
 import { ThemeProvider, BaseStyles } from '@primer/react'
-import NewPlayground from './components/NewPlayground'
 import ColorModeSwitcher from './ColorModeSwitcher'
 import NavigationBar from './components/NavBar'
-import HorizontalBarChart from './components/HorizontalBarChart'
-import VerticalBarChart from './components/VerticalBarChart'
-import LineChart from './components/LineChart'
-import StackedArea from './components/StackedArea'
 import { Box } from '@primer/react'
+import Polaris from './pages/Polaris'
+import HighchartsPg from './pages/Highcharts'
+import Visx from './pages/Visx'
+import Carbon from './pages/Carbon'
 import Highcharts from 'highcharts'
-import ChartWrapper from './components/ChartWrapper'
-import ShopifyCharts from './components/ShopifyCharts'
+import '@carbon/styles/css/styles.css'
+
+import '@carbon/charts/styles.css'
 require('highcharts/modules/accessibility')(Highcharts)
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <BaseStyles>
                 <NavigationBar />
                 <ColorModeSwitcher />
+
                 <Box bg="canvas.subtle">
                     <Box
                         maxWidth="960px"
@@ -27,31 +29,14 @@ function App() {
                         flexDirection="column"
                         gridGap={5}
                     >
-                        <ChartWrapper
-                            title="Types of issues occurring"
-                            description="Number of issues by year"
-                        >
-                            <LineChart />
-                        </ChartWrapper>
-                        <ChartWrapper
-                            title="Greenhouse gases from Norwegian economic activity"
-                            description="Million tonnes CO2 equivalents by year"
-                        >
-                            <StackedArea />
-                        </ChartWrapper>
-                        <ChartWrapper
-                            title="Types of issues occurring"
-                            description="Number of issues over time"
-                        >
-                            <HorizontalBarChart />
-                        </ChartWrapper>
-                        <ChartWrapper
-                            title="Types of issues occurring"
-                            description="Number of issues over time"
-                        >
-                            <VerticalBarChart />
-                        </ChartWrapper>
-                        <ShopifyCharts />
+                        <Routes>
+                            <Route path="/">
+                                <Route index element={<HighchartsPg />} />
+                                <Route path="polaris" element={<Polaris />} />
+                                <Route path="visx" element={<Visx />} />
+                                <Route path="carbon" element={<Carbon />} />
+                            </Route>
+                        </Routes>
                     </Box>
                 </Box>
             </BaseStyles>
