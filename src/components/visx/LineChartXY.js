@@ -24,6 +24,7 @@ export const LineChartXY = ({ height }) => {
             <AnimatedAxis orientation="left" />
             <AnimatedGrid columns={false} numTicks={4} />
             <AnimatedLineSeries dataKey="Line 1" data={data1} {...accessors} />
+            <AnimatedLineSeries dataKey="Line 2" data={data2} {...accessors} />
             <Tooltip
                 snapTooltipToDatumX
                 snapTooltipToDatumY
@@ -31,7 +32,7 @@ export const LineChartXY = ({ height }) => {
                 showSeriesGlyphs
                 renderTooltip={({ tooltipData, colorScale }) => (
                     <Box>
-                        <Box display="flex" alignItems="center" gap={2}>
+                        <Box display="flex" alignItems="center" gap={2} mb={1}>
                             <div
                                 style={{
                                     backgroundColor: colorScale(
@@ -107,7 +108,7 @@ const data1 = [
     },
     {
         x: '2019-01-01',
-        y: 166,
+        y: 66,
     },
     {
         x: '2019-02-01',
@@ -115,34 +116,34 @@ const data1 = [
     },
     {
         x: '2019-03-01',
-        y: 232,
+        y: 32,
     },
     {
         x: '2019-04-01',
-        y: 224,
+        y: 24,
     },
     {
         x: '2019-05-01',
-        y: 196,
+        y: 96,
     },
     {
         x: '2019-06-01',
-        y: 211,
+        y: 111,
     },
 ]
 
 const data2 = [
     {
         x: '2018-03-01',
-        y: 30,
+        y: 20,
     },
     {
         x: '2018-04-01',
-        y: 16,
+        y: 26,
     },
     {
         x: '2018-05-01',
-        y: 17,
+        y: 27,
     },
     {
         x: '2018-06-01',
@@ -150,15 +151,15 @@ const data2 = [
     },
     {
         x: '2018-07-01',
-        y: 47,
+        y: 27,
     },
     {
         x: '2018-08-01',
-        y: 32,
+        y: 22,
     },
     {
         x: '2018-09-01',
-        y: 8,
+        y: 2,
     },
     {
         x: '2018-10-01',
@@ -166,34 +167,34 @@ const data2 = [
     },
     {
         x: '2018-11-01',
-        y: 31,
+        y: 21,
     },
     {
         x: '2018-12-01',
-        y: 105,
+        y: 25,
     },
     {
         x: '2019-01-01',
-        y: 166,
+        y: 26,
     },
     {
         x: '2019-02-01',
-        y: 181,
+        y: 48,
     },
     {
         x: '2019-03-01',
-        y: 232,
+        y: 142,
     },
     {
         x: '2019-04-01',
-        y: 224,
+        y: 14,
     },
     {
         x: '2019-05-01',
-        y: 196,
+        y: 106,
     },
     {
         x: '2019-06-01',
-        y: 211,
+        y: 11,
     },
 ]

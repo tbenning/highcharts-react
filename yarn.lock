@@ -2920,6 +2920,17 @@
     classnames "^2.3.1"
     prop-types "^15.6.2"
 
+"@visx/legend@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@visx/legend/-/legend-3.0.0.tgz#b169667a99bbe0f0c2c610f938930022bb4a5d99"
+  integrity sha512-kESeNabNrDceMMYGPAmSyMQ8QLntbDecVrJY6YG8J1YkjZEpPjwdtq8ylP3LbxAiq2rSD1/3nQCnVlZM39gc+A==
+  dependencies:
+    "@types/react" "*"
+    "@visx/group" "3.0.0"
+    "@visx/scale" "3.0.0"
+    classnames "^2.3.1"
+    prop-types "^15.5.10"
+
 "@visx/mock-data@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@visx/mock-data/-/mock-data-3.0.0.tgz#d8ac030e8dc58b338cba87e6b65276e7f9ac63ad"
@@ -2965,7 +2976,7 @@
     lodash "^4.17.21"
     prop-types "^15.6.1"
 
-"@visx/scale@3.0.0":
+"@visx/scale@3.0.0", "@visx/scale@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@visx/scale/-/scale-3.0.0.tgz#727123f0c930d3346a4473e926831c45997e0312"
   integrity sha512-WSf+wrxZEvu5TPGfGTafzzX1MbogbIxfD9ZKM9p7xfw65v23G0dNMy4bqVBUbOJigONoQkIZyqQ+gz5AJ/ioIg==
